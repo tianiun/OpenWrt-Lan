@@ -48,3 +48,7 @@ sed -i 's/"网络存储"/"存储"/g' feeds/luci/applications/luci-app-usb-printe
 # sed -i 's/"BaiduPCS Web"/"百度网盘"/g' feeds/luci/applications/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 sed -i 's/"带宽监控"/"带宽"/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
 sed -i 's/"实时流量监测"/"流量"/g' feeds/luci/applications/luci-app-wrtbwmon/po/zh-cn/wrtbwmon.po
+
+更换 golang 版本
+rm -rf feeds/packages/lang/golang
+svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
